@@ -1,0 +1,163 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+a {
+    color: black;
+}
+
+body {
+    display: flex;
+}
+
+header {
+    display: block;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    padding-top: 10%;
+    width: 16%;
+    /* padding-inline: 2%; */
+    margin: auto;
+    padding: auto;
+}
+
+header li {
+    text-align: center;
+    margin-block: 5px;
+    border: 2px white solid;
+    border-radius: 20pc;
+    width: 80%;
+    background-color: white;
+}
+
+header img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    border: 2px white solid;
+    border-radius: 50%;
+
+}
+
+main {
+    margin-left: 20%;
+    padding: 2%;
+    width: 100%;
+}
+
+main h1 {
+    font-weight: bold;
+    font-size: 3pc;
+}
+
+#description{
+    background-color: black;
+    font-size: large;
+    text-align: center;
+    color: white;
+    width: 80%;
+    padding: 5%;
+    /* padding-top: 5%; */
+    height: 25%;
+    margin: 5%;
+    border-radius: 50px;
+    position: relative;
+}
+
+#contacts{
+    background-color: black;
+    margin-left: 15%;
+    /* height: 90%; */
+    width: 50%;
+    padding: 5%;
+    color: white;
+    font-size:x-large;
+    padding-right: 20px;
+    border-radius: 20px;
+    
+}
+.contactItem img{
+    height: 5%;
+    width: 5%;
+}
+.contactItem {
+    margin-block: 20px;
+}
+#design_description {
+    font-size: 3pc;
+    position: absolute;
+    bottom: 0;
+    right: 2pc;
+}
+
+#cursusLetter {
+    display: flex;
+
+}
+
+#cursusBottomLine, #projetsBottomLine, #contactBottomLine {
+    border-bottom: 2px black solid;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+#cursusAllItems{
+    display: grid;
+    /* align-content: space-between; */
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 40% 40% 40%;
+    justify-content: space-between;
+
+}
+#projetsAllItems{
+    display: grid;
+        /* align-content: space-between; */
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 60% 60% ;
+        justify-content: space-between;
+}
+
+.cursusItem,.projetsItem {
+    background-color: gainsboro;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    position: relative;
+    padding: 5%;
+    text-align: center;
+}
+
+.projetsItem {
+   
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(180, 178, 178);
+    
+}
+
+.cursusItem img {
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 20%;
+    width: 55%;
+    height: 55%;
+}
+.cursusItem h5{
+    margin-bottom: -5%;
+}
+.projetsItem a button:hover {
+    background-color: black;
+    color: white;
+}
+.projetsItem a button {
+    margin-top: 25%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+}
