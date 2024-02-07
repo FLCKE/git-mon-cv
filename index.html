@@ -8,21 +8,29 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>My_portfolio</title>
+    <style>
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    </style>
 </head>
 
 <body style="background-color: #212020c2;">
     <header style="background: url(./assets/télécharger.jpeg);" class="pb-5">
-        <nav class="navbar ">
-            <div class="container-sm-fluid">
+        <nav class="navbar navbar-expand-md shadow " style="background-color: #212020b9;">
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
 
-                <ul class="nav ">
-                    <li class="nav-item border border-light rounded-5  mx-3 "> <a class="nav-link text-white"
-                            href="#">Acceuil</a></li>
-                    <li class="nav-item border border-light rounded-5 px-3 mx-3"> <a class="nav-link text-white"
-                            href="./cursus.html">Cursus</a></li>
-                    <li class="nav-item border border-light rounded-5 px-3 mx-3"> <a class="nav-link text-white"
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item border border-light rounded-2  mx-3   text-center"> <a
+                            class="nav-link text-white" href="#">Acceuil</a></li>
+                    <li class="nav-item border border-light rounded-2    mx-3 text-center"> <a
+                            class="nav-link text-white" href="./cursus.html">Cursus</a></li>
+                    <li class="nav-item border border-light rounded-2  mx-3 text-center"> <a class="nav-link text-white"
                             href="./projets.html">Projets</a></li>
-                    <li class="nav-item border border-light rounded-5 px-3 mx-3"> <a class="nav-link text-white"
+                    <li class="nav-item border border-light rounded-2  mx-3 text-center"> <a class="nav-link text-white"
                             href="./contact.html">Contactez-moi</a></li>
                 </ul>
             </div>
@@ -37,10 +45,10 @@
         </div>
     </header>
     <main>
-        <section class=" mt-1 container-fluid " style="background-color: #212020;">
+        <section class=" mt-1  m-3 " style="background-color: #212020;">
 
             <div class="row">
-                <div class="col z-3  shadow">
+                <div class="col-md-6 z-3  shadow">
                     <p class="text-white  px-sm-5 pt-sm-5 " style="text-align: justify;">
                         Enthousiaste et créatif, je suis un étudiant en deuxième année passionné par le développement
                         web, actuellement axé sur l'acquisition de compétences pratiques pour créer des solutions
@@ -73,18 +81,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="col z-2 shadow" style="background-color: #949494cc;">
-                    <!-- <img src="./assets/photo.png" class="img-fluid border  " style="width: 50%; height:50%" alt=""> -->
+                <div class="col-md-6 z-2 shadow" style="background-color: #949494cc;">
                 </div>
             </div>
         </section>
-        <section class="mt-2 px-5 pt-5 pb-3" style="background-color: #212020;">
-            <h3 class="text-end mb-3 text-uppercase " style="color:#C9AD0A;">
+        <section class="mt-2 px-5 pt-5 pb-3 m-3" style="background-color: #212020;">
+            <h3 class="text-md-end text-center mb-3 text-uppercase " style="color:#C9AD0A;">
                 Competences
             </h3>
             <div class="row d-flex justify-content-evenly">
 
-                <div class="col-4 m-sm-2  card " style="width: 20rem; ">
+                <div class="col-md-4 m-2  card " style="width: 20rem; ">
                     <!-- <img src="./assets/logo__html.png" alt="" class="card-img-top"> -->
                     <div class="card-body">
                         <h3 class="card-title ">Programmation web</h3>
@@ -275,7 +282,7 @@
                         </ol>
                     </div>
                 </div>
-                <div class="col-4 m-sm-2 card " style="width: 20rem; ">
+                <div class="col-md-4 m-2 card " style="width: 20rem; ">
                     <div class="card-body">
                         <h3 class="card-title">Framework</h3>
                         <div class="d-flex justify-content-between">
@@ -441,7 +448,7 @@
                         </ol>
                     </div>
                 </div>
-                <div class="col-4 m-sm-2 card " style="width: 20rem; ">
+                <div class="col-md-4 m-2 card " style="width: 20rem; ">
                     <div class="card-body">
                         <h3 class="card-title">AUTRE</h3>
                         <div class="d-flex justify-content-between">
@@ -614,9 +621,9 @@
 
         </section>
         <section class="m-3 shadow px-5 pt-5 pb-3   ">
-            <h3 class="text-uppercase " style="color: #C9AD0A;">Projets</h3>
+            <h3 class="text-uppercase  text-center text-md-start " style="color: #C9AD0A;">Projets</h3>
             <div class="row d-flex justify-content-around ">
-                <div class="col-4 card text-center m-sm-3" style="width: 15rem;">
+                <div class="col-md-4 card text-center m-3" style="width: 15rem;">
                     <img src="./assets/spaceinvader.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Space invader</h3>
@@ -626,7 +633,7 @@
                     </div>
 
                 </div>
-                <div class="col-4 card text-center m-sm-3" style="width: 15rem;">
+                <div class="col-md-4 card text-center m-3" style="width: 15rem;">
                     <img src="./assets/forum.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Forum</h3>
@@ -636,7 +643,7 @@
                     </div>
 
                 </div>
-                <div class="col-4 card text-center m-sm-3" style="width: 15rem;">
+                <div class="col-md-4 card text-center m-3" style="width: 15rem;">
                     <img src="./assets/upload.png" alt="" height="100em" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Saver</h3>
@@ -647,7 +654,7 @@
 
                 </div>
 
-                <div class="col-4 card text-center m-sm-3" style="width: 15rem;">
+                <div class="col-md-4 card text-center m-3" style="width: 15rem;">
                     <img src="./assets/quizzgame.png" alt="" height="100em" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Quizz Game</h3>
